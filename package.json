@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"postbuild": "node scripts/emit-seo-assets.js",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"format": "prettier --write .",
