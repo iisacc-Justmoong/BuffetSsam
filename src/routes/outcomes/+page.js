@@ -1,7 +1,5 @@
 ﻿import { pages } from '$lib/seo/menifest.js';
 
-export const prerender = true;
-
 export const load = () => ({
-	seo: pages.home
+	seo: pages.outcomes
 });
