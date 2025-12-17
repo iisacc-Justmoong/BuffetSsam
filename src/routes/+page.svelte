@@ -4,6 +4,8 @@
 	import Stat from '$lib/components/ui/Stat.svelte';
 	import Panel from '$lib/components/blocks/Panel.svelte';
 	import SectionHeader from '$lib/components/blocks/SectionHeader.svelte';
+
+	const handleLeadSubmit = () => {};
 </script>
 
 <section class="hero">
@@ -17,6 +19,27 @@
 		<Button href="/contact">무료 진단 신청</Button>
 		<Button variant="ghost" href="/solutions">솔루션 살펴보기</Button>
 	</div>
+	<form class="lead-form" on:submit|preventDefault={handleLeadSubmit}>
+		<div class="lead-form__grid">
+			<label class="lead-form__field">
+				<span>이름</span>
+				<input name="name" type="text" placeholder="예: 홍길동" required />
+			</label>
+			<label class="lead-form__field">
+				<span>회사명</span>
+				<input name="company" type="text" placeholder="예: 에듀브릿지" required />
+			</label>
+			<label class="lead-form__field">
+				<span>이메일</span>
+				<input name="email" type="text" placeholder="example@email.com" required />
+			</label>
+			<label class="lead-form__field">
+				<span>문의 내용</span>
+				<input name="message" type="text" placeholder="필요하신 내용을 적어주세요" required />
+			</label>
+		</div>
+		<button class="button lead-form__submit" type="submit">상담 요청</button>
+	</form>
 	<div class="stats">
 		<Stat value="180+" label="누적 프로젝트" />
 		<Stat value="96%" label="고객 만족도" />
