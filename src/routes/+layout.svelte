@@ -1,6 +1,6 @@
 ﻿<script>
 	import Button from '$lib/components/ui/Button.svelte';
-	import { site } from '$lib/seo/site.js';
+	import { site } from '$lib/seo/site-data.js';
 
 	export let data;
 

@@ -1,8 +1,8 @@
 ﻿export const site = {
 	name: '버핏쌤의 에듀컨설팅',
 	description:
-		'전략과 역량 데이터를 기반으로 교육 과제를 진단하고, 실행 가능한 프로그램과 성과 측정까지 연결합니다.',
-	url: 'https://edubridge.co.kr',
+		'학점은행제를 통해 학위 취득, 편입 조건, 자격증 응시를 돕습니다',
+	url: 'https://www.cb.or.kr/creditbank/base/nMain.do',
 	locale: 'ko-KR',
 	themeColor: '#0a0a0a'
 };
