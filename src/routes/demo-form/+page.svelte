@@ -1,71 +1,30 @@
 <script>
-	let field1 = '';
-	let field2 = '';
-	let field3 = '';
-	let field4 = '';
+	import RequestForm from '$lib/components/blocks/RequestForm.svelte';
+
+	const handleSubmit = (event) => {
+		console.log('Demo form submitted', event.detail);
+	};
 </script>
 
 <svelte:head>
-	<title>Form Demo</title>
+	<title>Demo Form</title>
 </svelte:head>
 
-<main class="form-page">
-	<h1>Form Demo</h1>
-	<form class="form" on:submit|preventDefault>
-		<label class="field">
-			<span>Field 1</span>
-			<input name="field1" type="text" bind:value={field1} required />
-		</label>
-		<label class="field">
-			<span>Field 2</span>
-			<input name="field2" type="text" bind:value={field2} required />
-		</label>
-		<label class="field">
-			<span>Field 3</span>
-			<input name="field3" type="text" bind:value={field3} required />
-		</label>
-		<label class="field">
-			<span>Field 4</span>
-			<input name="field4" type="text" bind:value={field4} required />
-		</label>
-		<button type="submit">Submit</button>
-	</form>
-</main>
-
-<style>
-	.form-page {
-		display: grid;
-		gap: 1.5rem;
-		max-width: 560px;
-		margin: 0 auto;
-		padding: 3rem 1.5rem;
-	}
-
-	.form {
-		display: grid;
-		gap: 1rem;
-	}
-
-	.field {
-		display: grid;
-		gap: 0.5rem;
-	}
-
-	input {
-		padding: 0.75rem 0.9rem;
-		border: 1px solid #cfcfcf;
-		border-radius: 8px;
-		font: inherit;
-	}
-
-	button {
-		align-self: start;
-		padding: 0.75rem 1.5rem;
-		border-radius: 999px;
-		border: 1px solid #121212;
-		background: #121212;
-		color: #fff;
-		font: inherit;
-		cursor: pointer;
-	}
-</style>
+<section class="section">
+	<RequestForm
+		kicker="Demo Request"
+		title="현황을 공유하고 맞춤 데모를 받아보세요"
+		lead="팀 규모, 목표, 일정만 알려주시면 24시간 이내에 커리큘럼 샘플과 견적 가이드를 보냅니다."
+		checklist={[
+			'성과 목표와 우선순위',
+			'대상 인원/직무와 일정',
+			'희망 예산 범위'
+		]}
+		highlights={[
+			{ label: '데모 전달', value: '24시간 내', hint: '핵심 KPI와 커리큘럼 샘플 포함' },
+			{ label: '진단 미팅', value: '30분 콜', hint: '필요 시 현장 방문 브리핑' }
+		]}
+		submitLabel="데모 요청하기"
+		on:submit={handleSubmit}
+	/>
+</section>

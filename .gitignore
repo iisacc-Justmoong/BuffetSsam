@@ -20,3 +20,164 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Build artifacts
+build
+dist
+.svelte-kit
+.svelte-kit-output
+*.pem
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+logs
+logs/*
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+
+# Caches
+.cache
+.parcel-cache
+.turbo
+.next
+.vite
+.nuxt
+.tmp
+temp
+*.tmp
+*.swp
+*.swo
+
+# IDE
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.iml
+
+# Mac/Win extras
+ehthumbs.db
+
+# Package managers
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnpm-store
+*.tsbuildinfo
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+*.stackdump
+
+# Dependency dirs
+jspm_packages/
+bower_components/
+.npm
+.npm/_logs
+.npm/_cacache
+
+# Editor backups
+*~
+.*.sw?
+*.orig
+*.bak
+*.backup
+*.rej
+
+# Images/artifacts
+*.psd
+*.ai
+*.sketch
+*.xcf
+*.tiff
+*.bmp
+*.ico
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+
+# Env/credentials
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.aws
+*.key
+*.crt
+
+# Docker
+*.pid
+.docker
+.docker-compose.override.yml
+docker-compose.override.yml
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-*
+*.sqlite-journal
+
+# Cypress/Playwright
+cypress/videos
+cypress/screenshots
+playwright-report
+test-results
+
+# Storybook
+.storybook-out
+storybook-static
+
+# Firebase
+.firebaserc.local
+.firebase/
+firebase-debug.log
+
+# IntelliJ/WebStorm
+.idea/
+*.ipr
+*.iws
+out/
+
+# VS Code server
+.vscode-test
+.vscode/ipch
+
+# OS metadata
+Icon?
+Desktop.ini
+
+# Misc cache
+.eslintcache
+.stylelintcache
+.sass-cache
+.nyc_output
+
+# Node REPL history
+.node_repl_history
+.npmrc.local
+
+# Temp files
+.fseventsd
+.Trash-*
+*.tmp.*
+*.temp
