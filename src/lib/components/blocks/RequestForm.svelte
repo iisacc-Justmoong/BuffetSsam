@@ -79,7 +79,7 @@
 			</label>
 			<label class="demo-form__field">
 				<span>전화번호</span>
-				<input name="email" type="email" placeholder="01012345678" bind:value={email} required />
+				<input name="email" type="text" placeholder="01012345678" />
 			</label>
 			<label class="demo-form__field">
 				<span>상담희망시간</span>
@@ -137,10 +137,7 @@
 		align-content: start;
 	}
 
-	.demo-form__badge {
-		background: rgba(255, 255, 255, 0.05);
-		border-color: var(--color-border-strong);
-	}
+	
 
 	.demo-form__titles {
 		display: grid;
