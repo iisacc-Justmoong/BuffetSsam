@@ -12,60 +12,64 @@
 </script>
 
 <section class="hero">
-	<Badge>Education Consulting</Badge>
-	<h1 class="hero__title">조직의 학습 경험을 설계하는 맞춤형 교육컨설팅</h1>
+	<Badge>Credit Bank Consulting</Badge>
+	<h1 class="hero__title">학점은행제 학위 취득을 끝까지 책임지는 맞춤 컨설팅</h1>
 	<p class="hero__lead">
-		전략과 역량 데이터를 기반으로 교육 과제를 진단하고, 실행 가능한 프로그램과 성과
-		측정까지 연결합니다.
+		목표 학위·전공과 보유 학점을 기준으로 자격증, 독학사, 온라인 과목을 조합해 최단
+		기간 로드맵과 행정 절차까지 설계합니다.
 	</p>
 	<div class="hero__actions">
-		<Button href="/contact">무료 진단 신청</Button>
+		<Button href="/contact">무료 상담 요청</Button>
 		<Button variant="ghost" href="/solutions">솔루션 살펴보기</Button>
 	</div>
 	<div class="stats">
-		<Stat value="180+" label="누적 프로젝트" />
-		<Stat value="96%" label="고객 만족도" />
-		<Stat value="68%" label="현업 적용률" />
-		<Stat value="24명" label="전문 컨설턴트" />
+		<Stat value="320+" label="연간 상담/설계" />
+		<Stat value="98%" label="학위 취득 성공률" />
+		<Stat value="1.2학기" label="평균 기간 단축" />
+		<Stat value="12명" label="전담 컨설턴트" />
 	</div>
 </section>
 
 <section class="section">
 	<RequestForm
-		kicker="상담 요청"
-		title="교육 프로젝트를 24시간 내 실행 가능한 안으로 바꿔드립니다"
-		lead="현업 과제, 일정, 예산만 남겨주시면 맞춤형 러닝 패키지와 성과지표 초안을 보내드립니다."
+		kicker="학점은행제 상담"
+		title="학위·일정에 맞는 학점 설계안을 24시간 내 제안합니다"
+		lead="목표 전공, 보유 학점, 희망 기간을 알려주시면 학점 인정 경로와 수강 계획을 세워드립니다."
 		checklist={[
-			'진단 결과 기반 커리큘럼 2안 제안',
-			'운영 계획·참여 독려 메시지 포함',
-			'예산/일정에 맞춘 단계별 옵션'
+			'목표 학위/전공 맞춤 학습 경로 2안',
+			'전적대·자격·독학사 활용 학점 계산',
+			'수강·신청·보고 일정표 제공'
 		]}
 		highlights={[
-			{ label: '평균 응답', value: '4.8시간', hint: '프로젝트 전담 컨설턴트 배정' },
-			{ label: '제안 패키지', value: '로드맵 + 견적', hint: 'KPI/운영 리소스 포함' }
+			{ label: '평균 응답', value: '4.5시간', hint: '전담 컨설턴트 1:1 배정' },
+			{ label: '제안 포함', value: '학습·행정 체크리스트', hint: '등록/인정 절차 안내' }
 		]}
-		submitLabel="상담 요청 보내기"
+		submitLabel="학점 설계 요청"
 		on:submit={handleDemoSubmit}
 	/>
 </section>
 
 <section class="section">
 	<SectionHeader
-		kicker="Overview"
-		title="교육 성과를 만드는 핵심 포인트"
-		lead="조직의 상황을 빠르게 파악하고 실행 가능한 로드맵으로 연결합니다."
+		kicker="핵심 포인트"
+		title="학점은행제 성공률을 높이는 컨설팅 포인트"
+		lead="자격증, 독학사, 온라인 과목을 조합해 기간과 비용을 최적화합니다."
 	/>
 	<div class="split">
 		<Panel
-			title="진단-설계 연결"
-			text="데이터 기반으로 현 상황을 정의하고 목표에 맞는 학습 여정을 설계합니다."
-			items={['직무별 역량 매핑', '핵심 과제 우선순위', '성과 지표 합의']}
+			title="학점 로드맵 설계"
+			text="목표 학위에 맞는 학점 조합과 학기별 일정을 설계합니다."
+			items={['전적대/자격/독학사 학점 인정 계산', '학기별 수강·시험 일정표', '최소 비용·기간 플랜']}
 		/>
 		<Panel
 			accent={true}
-			title="현장 실행 지원"
-			text="실행 단계에서 운영 부담을 줄이고 참여를 높입니다."
-			items={['강사·콘텐츠 큐레이션', '운영 체크리스트 제공', '참여 리마인드 메시지']}
+			title="행정·제출 지원"
+			text="등록부터 학점 인정, 학위 신청까지 놓치지 않게 관리합니다."
+			items={[
+				'학습자 등록 및 학점인정 신청 가이드',
+				'필수 서류 점검·제출 리마인드',
+				'학위 신청까지 단계별 체크리스트'
+			]}
 		/>
 	</div>
 </section>
