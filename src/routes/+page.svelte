@@ -6,8 +6,27 @@
 	import Panel from '$lib/components/blocks/Panel.svelte';
 	import SectionHeader from '$lib/components/blocks/SectionHeader.svelte';
 
-	const handleDemoSubmit = (event) => {
-		console.log('Homepage demo form', event.detail);
+	const handleDemoSubmit = async (event) => {
+		const { name, company, email, topic, detail } = event?.detail ?? {};
+		const payload = { name, company, email, topic, detail };
+
+		try {
+			const response = await fetch('/api/contact', {
+				method: 'POST',
+				headers: { 'content-type': 'application/json' },
+				body: JSON.stringify(payload)
+			});
+
+			if (!response.ok) {
+				const error = await response.json().catch(() => ({}));
+				console.error('Homepage demo form: send failed', error);
+				return;
+			}
+
+			console.log('Homepage demo form: sent');
+		} catch (error) {
+			console.error('Homepage demo form: send failed', error);
+		}
 	};
 </script>
 
@@ -44,7 +63,7 @@
 			{ label: '평균 응답', value: '4.5시간', hint: '전담 컨설턴트 1:1 배정' },
 			{ label: '제안 포함', value: '학습·행정 체크리스트', hint: '등록/인정 절차 안내' }
 		]}
-		submitLabel="학점 설계 요청"
+		submitLabel="상담 요청"
 		on:submit={handleDemoSubmit}
 	/>
 </section>

@@ -79,7 +79,7 @@
 			</label>
 			<label class="demo-form__field">
 				<span>전화번호</span>
-				<input name="email" type="text" placeholder="01012345678" />
+				<input name="email" type="text" placeholder="01012345678" bind:value={email} />
 			</label>
 			<label class="demo-form__field">
 				<span>상담희망시간</span>
