@@ -70,33 +70,33 @@
 		</div>
 		<div class="demo-form__grid">
 			<label class="demo-form__field">
-				<span>담당자 이름</span>
+				<span>성함</span>
 				<input name="name" type="text" placeholder="예: 홍길동" bind:value={name} required />
 			</label>
 			<label class="demo-form__field">
-				<span>회사/조직명</span>
-				<input name="company" type="text" placeholder="예: 에듀브릿지" bind:value={company} required />
+				<span>최종 학력</span>
+				<input name="company" type="text" placeholder="예: 2년제 전문대졸" bind:value={company} required />
 			</label>
 			<label class="demo-form__field">
-				<span>업무 이메일</span>
-				<input name="email" type="email" placeholder="name@company.com" bind:value={email} required />
+				<span>전화번호</span>
+				<input name="email" type="email" placeholder="01012345678" bind:value={email} required />
 			</label>
 			<label class="demo-form__field">
-				<span>필요한 교육 주제</span>
+				<span>상담희망시간</span>
 				<input
 					name="topic"
 					type="text"
-					placeholder="예: 리더십 온보딩, 세일즈 퍼포먼스"
+					placeholder="예: 내일 오후 4시"
 					bind:value={topic}
 					required
 				/>
 			</label>
 			<label class="demo-form__field demo-form__field--full">
-				<span>현재 상황/요청사항</span>
+				<span>상담내용</span>
 				<textarea
 					name="detail"
 					rows="3"
-					placeholder="과제, 팀 규모, 희망 일정 등을 알려주세요."
+					placeholder="예: 간호학과에 편입하고 싶어요."
 					bind:value={detail}
 				></textarea>
 			</label>
