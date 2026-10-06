@@ -10,6 +10,6 @@
 	$: classes = ['button', variantClass, className].filter(Boolean).join(' ');
 </script>
 
-<a class={classes} href={href} {...$$restProps}>
+<a class={classes} {href} {...$$restProps}>
 	<slot />
 </a>

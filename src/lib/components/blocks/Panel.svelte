@@ -15,7 +15,7 @@
 	<p class="panel__text">{text}</p>
 	{#if items.length}
 		<ul class="list">
-			{#each items as item}
+			{#each items as item, index (index)}
 				<li>{item}</li>
 			{/each}
 		</ul>

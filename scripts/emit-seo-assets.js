@@ -5,7 +5,7 @@ import { pages } from '../src/lib/seo/page-meta.js';
 import { site } from '../src/lib/seo/site-data.js';
 
 const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const distDir = resolve(rootDir, 'dist');
+const distDir = resolve(rootDir, 'build/seo');
 
 await mkdir(distDir, { recursive: true });
 

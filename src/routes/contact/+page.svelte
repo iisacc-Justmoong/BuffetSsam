@@ -8,9 +8,7 @@
 <section class="cta">
 	<Badge>Contact</Badge>
 	<h2 class="cta__title">무료 진단으로 교육 성과를 시작하세요</h2>
-	<p class="cta__lead">
-		프로젝트 조건을 공유해 주시면 일주일 내 진단 결과와 맞춤 제안을 드립니다.
-	</p>
+	<p class="cta__lead">프로젝트 조건을 공유해 주시면 일주일 내 진단 결과와 맞춤 제안을 드립니다.</p>
 	<div class="cta__actions">
 		<Button href="mailto:hello@edubridge.co.kr">상담 요청</Button>
 		<Button variant="ghost" href="/programs">소개서 요청</Button>

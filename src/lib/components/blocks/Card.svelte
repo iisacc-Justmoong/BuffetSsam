@@ -14,7 +14,7 @@
 	<p class="card__meta">{meta}</p>
 	{#if items.length}
 		<ul class="card__list">
-			{#each items as item}
+			{#each items as item, index (index)}
 				<li>{item}</li>
 			{/each}
 		</ul>

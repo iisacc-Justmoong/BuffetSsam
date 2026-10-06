@@ -1,4 +1,5 @@
 ﻿<script>
+	import { resolve } from '$app/paths';
 	import Button from '$lib/components/ui/Button.svelte';
 	import { site } from '$lib/seo/site-data.js';
 
@@ -29,7 +30,7 @@
 
 <main class="page" id="top">
 	<header class="topbar">
-		<a class="brand" href="/">
+		<a class="brand" href={resolve('/')}>
 			<span class="brand__mark">E</span>
 			<span class="brand__text">
 				<span class="brand__name">버핏쌤의 에듀컨설팅</span>
@@ -37,12 +38,12 @@
 			</span>
 		</a>
 		<nav class="nav">
-			<a href="/solutions">솔루션</a>
-			<a href="/programs">프로그램</a>
-			<a href="/process">프로세스</a>
-			<a href="/outcomes">성과</a>
+			<a href={resolve('/solutions')}>솔루션</a>
+			<a href={resolve('/programs')}>프로그램</a>
+			<a href={resolve('/process')}>프로세스</a>
+			<a href={resolve('/outcomes')}>성과</a>
 		</nav>
-		<Button variant="outline" href="/contact">상담 예약</Button>
+		<Button variant="outline" href={resolve('/contact')}>상담 예약</Button>
 	</header>
 
 	<slot />

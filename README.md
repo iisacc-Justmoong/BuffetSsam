@@ -1,5 +1,11 @@
 # sv
 
+Build intermediates are in `build/kit`, and generated SEO modules are in
+`build/seo`. For local Vercel builds, point `.vercel` at `build/vercel` using a
+directory junction on Windows before running `npm run build`. This preserves
+the Vercel adapter while keeping generated artifacts under `build/`.
+Validate this layout with `npm test`.
+
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
 ## Creating a project

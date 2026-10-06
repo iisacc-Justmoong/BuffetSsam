@@ -39,14 +39,14 @@
 		</div>
 		{#if checklist.length}
 			<div class="demo-form__chips">
-				{#each checklist as item}
+				{#each checklist as item, index (index)}
 					<span class="demo-form__chip">{item}</span>
 				{/each}
 			</div>
 		{/if}
 		{#if highlights.length}
 			<div class="demo-form__highlights">
-				{#each highlights as item}
+				{#each highlights as item, index (index)}
 					<div class="demo-form__highlight">
 						<p class="demo-form__highlight-label">{item.label}</p>
 						<p class="demo-form__highlight-value">{item.value}</p>
@@ -75,7 +75,13 @@
 			</label>
 			<label class="demo-form__field">
 				<span>최종 학력</span>
-				<input name="company" type="text" placeholder="예: 2년제 전문대졸" bind:value={company} required />
+				<input
+					name="company"
+					type="text"
+					placeholder="예: 2년제 전문대졸"
+					bind:value={company}
+					required
+				/>
 			</label>
 			<label class="demo-form__field">
 				<span>전화번호</span>
@@ -136,8 +142,6 @@
 		gap: 12px;
 		align-content: start;
 	}
-
-	
 
 	.demo-form__titles {
 		display: grid;
@@ -290,7 +294,10 @@
 		background: var(--color-background-secondary);
 		color: var(--color-text-primary);
 		font: inherit;
-		transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+		transition:
+			border-color 120ms ease,
+			box-shadow 120ms ease,
+			transform 120ms ease;
 	}
 
 	.demo-form__field input:focus,

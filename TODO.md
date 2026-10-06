@@ -1,6 +1,7 @@
 ## 검색 최적화 TODO
 
 ### 기술 SEO
+
 - [ ] `sitemap.xml` 자동 생성 및 `robots.txt`에 경로 명시
 - [ ] 모든 페이지에 고유한 `title`/`description` 설정 (길이 가이드 포함)
 - [ ] `canonical` 일관성 점검 (https, www/non-www, trailing slash)
@@ -12,6 +13,7 @@
 - [ ] MIME type/캐시 헤더 정합성 점검
 
 ### 구조화 데이터 (JSON-LD)
+
 - [ ] `Organization` 또는 `LocalBusiness` 스키마 추가 (logo, sameAs 포함)
 - [ ] `WebSite` + `SearchAction` 스키마 추가
 - [ ] 주요 페이지 `BreadcrumbList` 추가
@@ -19,6 +21,7 @@
 - [ ] FAQ 섹션이 있으면 `FAQPage` 스키마 추가
 
 ### 콘텐츠/정보 구조
+
 - [ ] 핵심 키워드별 랜딩 페이지 확장 (문제/해결/성과 구조)
 - [ ] 서비스별 상세 설명, 사례, 수치/성과 콘텐츠 추가
 - [ ] 신뢰 요소” 강화 (경력, 인증, 파트너 등)
@@ -26,6 +29,7 @@
 - [ ] 내부 링크 체계 개선 (연관 서비스/사례 연결)
 
 ### 성능 (Core Web Vitals)
+
 - [ ] LCP 개선: 히어로 이미지 최적화/프리로드
 - [ ] CLS 개선: 이미지/폰트에 고정 크기 지정
 - [ ] INP 개선: 불필요한 JS 제거/이벤트 최적화
@@ -35,12 +39,14 @@
 - [ ] 정적 자산 장기 캐시(`cache-control`) 설정
 
 ### 접근성/시맨틱
+
 - [ ] H1~H3 계층 구조 점검 및 문서 구조 정리
 - [ ] 이미지 `alt`와 링크 텍스트 의미 개선
 - [ ] 키보드 네비게이션/포커스 스타일 점검
 - [ ] 색 대비/가독성 점검
 
 ### 크롤링/인덱싱 운영
+
 - [ ] Google Search Console/Bing Webmaster 등록
 - [ ] 크롤 오류/커버리지 리포트 정기 확인
 - [ ] 리디렉션/404 로그 모니터링
